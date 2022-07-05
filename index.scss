@@ -1,0 +1,55 @@
+$white: #fff;
+$black: #000;
+
+body {
+  font-family: monospace;
+}
+
+nav > a {
+  color: $white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: $black;
+  margin: 10px;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.homeSubtitle {
+  margin: 10px;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: $black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.projectCardTitle {
+  color: $white;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.projectCardDescription {
+  color: $white;
+  font-size: 1em;
+  margin: 10px;
+}
+
+.projectCardLink {
+  color: $white;
+  text-decoration: none;
+  margin: 10px;
+  text-decoration: underline;
+}
