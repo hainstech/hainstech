@@ -7,7 +7,7 @@ struct Project {
     name: String,
     description: Option<String>,
     language: Option<String>,
-    url: String,
+    html_url: String,
 }
 
 #[function_component(Projects)]
@@ -56,7 +56,7 @@ pub fn projects() -> Html {
                         </div>
                     </div>
                     <div class="projectCardFooter">
-                        <a class="projectCardLink" href={ project.url.to_owned() }>{ project.url }</a>
+                        <a class="projectCardLink" href={ project.html_url.to_owned() } target="_blank" >{ project.html_url }</a>
                     </div>
                 </div>
             }

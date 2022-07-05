@@ -697,7 +697,7 @@ function initSync(bytes) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('hainstech-2433e39e4e328b03_bg.wasm', import.meta.url);
+        input = new URL('hainstech-6a50592a005b76ed_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
