@@ -2,39 +2,12 @@
     <meta charset="utf-8">
     <title>Hainstech</title>
 
-    <link rel="stylesheet" href="/index-a69bd1c2d5562e65.css">
-    <script type="module">import init from '/hainstech-6a50592a005b76ed.js';init('/hainstech-6a50592a005b76ed_bg.wasm');</script>
+    <link rel="stylesheet" href="/index-dd9c7310c3dfb523.css">
+    <script type="module">import init from '/hainstech-f98d531e011b679c.js';init('/hainstech-f98d531e011b679c_bg.wasm');</script>
   
-<link rel="preload" href="/hainstech-6a50592a005b76ed_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/hainstech-6a50592a005b76ed.js"></head>
+<link rel="preload" href="/hainstech-f98d531e011b679c_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/hainstech-f98d531e011b679c.js"></head>
 
   <body>
 
-<script>(function () {
-    var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-    var url = protocol + '//' + window.location.host + '/_trunk/ws';
-    var poll_interval = 5000;
-    var reload_upon_connect = () => {
-        window.setTimeout(
-            () => {
-                // when we successfully reconnect, we'll force a
-                // reload (since we presumably lost connection to
-                // trunk due to it being killed, so it will have
-                // rebuilt on restart)
-                var ws = new WebSocket(url);
-                ws.onopen = () => window.location.reload();
-                ws.onclose = reload_upon_connect;
-            },
-            poll_interval);
-    };
-
-    var ws = new WebSocket(url);
-    ws.onmessage = (ev) => {
-        const msg = JSON.parse(ev.data);
-        if (msg.reload) {
-            window.location.reload();
-        }
-    };
-    ws.onclose = reload_upon_connect;
-})()
-</script></body></html>
+</body></html>
